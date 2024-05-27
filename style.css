@@ -1,0 +1,21 @@
+.box {
+  border: 50px solid #c0392b;
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.box-green {
+  border: 50px solid #f1c40f;
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 50px;
+  visibility: hidden; /*보이지만 않지 차지했던 공간은 그대로 비워놓음*/
+  display: none; /*시각적으로 보이지 않고, 차지하고 있던 공간도 없어짐, display: none;이 우선 실행*/
+}
+
+.box-blue {
+  border: 50px solid #3498db;
+  width: 200px;
+  padding: 50px;
+}
