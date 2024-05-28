@@ -11,11 +11,129 @@
   margin-bottom: 20px;
   padding: 50px;
   visibility: hidden; /*보이지만 않지 차지했던 공간은 그대로 비워놓음*/
-  display: none; /*시각적으로 보이지 않고, 차지하고 있던 공간도 없어짐, display: none;이 우선 실행*/
+  /* display: none; 시각적으로 보이지 않고, 차지하고 있던 공간도 없어짐, display: none;이 우선 실행 */
 }
 
 .box-blue {
   border: 50px solid #3498db;
   width: 200px;
   padding: 50px;
+}
+
+section {
+  margin-left: 10%;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  word-wrap: break-word;
+  /* text-indent: 10% 첫번째줄만 들여쓰기가 되어버려 margin-left로 들여쓰기를 하고 width: 90%로 화면이 넘어가 스크롤이 생기지 않게 함  */
+}
+
+div > :first-child {
+  text-align: center;
+}
+
+h1 {
+  color: #9b59b6;
+}
+h1::before {
+  content: 'Topic: ';
+}
+
+p {
+  font-size: 16px;
+  font: Verdana;
+  font-style: italic;
+}
+p::first-letter {
+  font-size: 200%;
+  color: #2980b9;
+}
+
+.sub-header {
+  color: #2980b9;
+}
+
+.background {
+  background-color: silver;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      white 10%,
+      silver 10%,
+      silver 23%,
+      white 23%,
+      white 30%,
+      silver 30%,
+      silver 43%,
+      white 43%,
+      white 50%,
+      silver 50%,
+      silver 63%,
+      white 63%,
+      white 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    );
+
+  background-size: 200px 100px;
 }
